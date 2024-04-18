@@ -1,0 +1,511 @@
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:300,600);
+
+
+.question {
+  font-size: 30px;
+  margin-bottom: 10px;
+  padding: 1rem;
+  margin-top: -20px;
+}
+
+.answers {
+  margin-bottom: 20px;
+  text-align: left;
+  display: inline-block;
+  padding: 1rem;
+}
+
+.answers label {
+  display: block;
+  margin-bottom: 15px;
+  cursor: pointer;
+}
+
+.answers label:hover {
+  filter: brightness(70%);
+}
+
+button {
+  font-family: 'Brandon Grotesque', sans-serif;
+  font-size: 15px;
+  background-color: #004C6C;
+  color: #ffffff;
+  border: 0px;
+  border-radius: 20px;
+  padding: 20px 30px;
+  cursor: pointer;
+  position: relative;
+  z-index: 2;
+  display: block;
+  /* Change from inline-block to block */
+  margin-top: 20px;
+  margin-bottom: 10px;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  width: 30%;
+}
+
+#next {
+  margin-top: 50px;
+}
+
+#submit {
+  margin-top: 100px;
+  margin-bottom: -100px;
+}
+
+#previous {
+  margin-bottom: 1rem;
+}
+
+#results {
+  padding: 1rem;
+}
+
+button:hover {
+  opacity: 0.8;;
+}
+
+.slide {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+
+.active-slide {
+  opacity: 2;
+  z-index: 2;
+}
+
+.quiz-container {
+  position: relative;
+  height: 200px;
+  margin-top: 40px;
+}
+
+/* General Screen rules for ALL quizzes */
+@media screen and (max-width: 1000px) {
+  button {
+    width: 40%;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  button {
+    width: 50%;
+  }
+}
+
+
+@media screen and (max-width: 550px) {
+  button {
+    padding: 15px;
+    margin-top: 20px;
+    /* Adjust margin-top for smaller screens */
+    margin-bottom: 0px;
+    display: block;
+    /* Make buttons block-level elements */
+    width: 95%;
+    /* Set button width to 100% */
+  }
+}
+
+/* Question = 28px */
+/* Answers = 28px */
+
+@media screen and (max-width:1600px) {
+  .question {
+    font-size: 25px;
+  }
+
+  .answers label {
+    font-size: 22px;
+  }
+}
+
+/* --------- Rules For The screen at 1200px --------- */
+
+@media screen and (max-width:1200px) {
+  .quiz2 .question,
+  .quiz3 .question,
+  .quiz4 .question,
+  .quiz6 .question {
+    font-size: 24px;
+  }
+
+  .quiz2 .answers label,
+  .quiz3 .answers label,
+  .quiz4 .answers label,
+  .quiz6 .answers label {
+    font-size: 20px;
+  }
+
+  .quiz3 .answers label,
+  .quiz4 .answers label,
+  .quiz6 .answers label {
+    font-size: 22px;
+  }
+}
+
+
+/* --------- Rules For The screen at 1000px --------- */
+
+@media screen and (max-width:1200px) {
+  .quiz3 .question {
+    font-size: 24px;
+  }
+
+  .quiz3 .answers label,
+  .quiz12 .answers label {
+    font-size: 20px;
+  }
+
+  .quiz12 .question {
+    font-size: 22px;
+  }
+}
+
+
+/* --------- Rules For The screen at 900px --------- */
+
+@media screen and (max-width:900px) {
+  .quiz5 .question {
+    font-size: 24px;
+  }
+
+  .quiz5 .answers label {
+    font-size: 24px;
+  }
+
+  .quiz9 .question,
+  .quiz11 .question,
+  .quiz15 .question,
+  .quiz16 .question,
+  .quiz17 .question {
+    font-size: 22px;
+  }
+
+  .quiz9 .answers label,
+  .quiz11 .answers label,
+  .quiz15 .answers label,
+  .quiz16 .answers label,
+  .quiz17 .answers label {
+    font-size: 20px;
+  }
+}
+
+
+/* --------- Rules For The screen at 800px --------- */
+
+@media screen and (max-width:800px) {
+  .quiz1 .question {
+    font-size: 24px;
+  }
+
+  .quiz1 .answers label {
+    font-size: 20px;
+  }
+
+  .quiz3 .question,
+  .quiz8 .question,
+  .quiz10 .question,
+  .quiz13 .question,
+  .quiz14 .question {
+    font-size: 22px;
+  }
+
+  .quiz3 .answers label,
+  .quiz10 .answers label,
+  .quiz13 .answers label,
+  .quiz14 .answers label {
+    font-size: 20px;
+  }
+
+  .quiz8 .answers label,
+  .quiz12 .answers label,
+  .quiz16 .answers label {
+    font-size: 20px;
+  }
+
+  .quiz12 .question,
+  .quiz16 .question {
+    font-size: 20px;
+  }
+
+  .quiz3 .answers label {
+    font-size: 16px;
+  }
+
+  .quiz12 .answers label,
+  .quiz16 .answers label {
+    font-size: 18px;
+  }
+}
+
+
+/* --------- Rules For The screen at 700px --------- */
+
+@media screen and (max-width:700px) {
+  .quiz5 .question,
+  .quiz7 .question,
+  .quiz11 .question,
+  .quiz13 .question,
+  .quiz14 .question,
+  .quiz15 .question,
+  .quiz17 .question {
+    font-size: 20px;
+  }
+
+  .quiz5 .answers label,
+  .quiz7 .answers label,
+  .quiz11 .answers label,
+  .quiz13 .answers label,
+  .quiz14 .answers label,
+  .quiz15 .answers label,
+  .quiz17 .answers label {
+    font-size: 18px;
+  }
+}
+
+
+/* --------- Rules For The screen at 600px --------- */
+
+@media screen and (max-width:600px) {
+  .quiz2 .question,
+  .quiz11 .question,
+  .quiz12 .question,
+  .quiz13 .question,
+  .quiz14 .question,
+  .quiz15 .question,
+  .quiz16 .question,
+  .quiz17 .question {
+    font-size: 18px;
+  }
+
+  .quiz4 .question,
+  .quiz6 .question {
+    font-size: 22px;
+  }
+
+  .quiz8 .question {
+    font-size: 20px;
+  }
+
+  .quiz9 .question {
+    font-size: 19px;
+  }
+
+  .quiz10 .question {
+    font-size: 18px;
+  }
+
+  .quiz2 .answers label,
+  .quiz8 .answers label {
+    font-size: 18px;
+  }
+
+  .quiz4 .answers label,
+  .quiz6 .answers label,
+  .quiz11 .answers label {
+    font-size: 20px;
+  }
+
+  .quiz9 .answers label,
+  .quiz17 .answers label {
+    font-size: 17px;
+  }
+
+  .quiz10 .answers label,
+  .quiz12 .answers label,
+  .quiz13 .answers label,
+  .quiz14 .answers label,
+  .quiz15 .answers label {
+    font-size: 16px;
+  }
+
+  .quiz16 .answers label {
+    font-size: 15px;
+  }
+}
+
+
+/*--------- Rules for the screen at 500px --------- */
+
+@media screen and (max-width: 500px) {
+  .quiz1 .question,
+  .quiz11 .question {
+    font-size: 22px;
+  }
+
+  .quiz1 .answers label,
+  .quiz5 .answers label,
+  .quiz4 .answers label {
+    font-size: 18px;
+  }
+
+  .quiz2 .question,
+  .quiz10 .question {
+    font-size: 18px;
+  }
+
+  .quiz2 .answers label,
+  .quiz10 .answers label {
+    font-size: 16px;
+  }
+
+  .quiz3 .question,
+  .quiz7 .question {
+    font-size: 20px;
+  }
+
+  .quiz3 .answers label,
+  .quiz7 .answers label {
+    font-size: 15px;
+  }
+
+  .quiz8 .question,
+  .quiz9 .question,
+  .quiz17 .question {
+    font-size: 18px;
+  }
+
+  .quiz8 .answers label,
+  .quiz9 .answers label,
+  .quiz17 .answers label {
+    font-size: 16px;
+  }
+
+  .quiz9 .question {
+    font-size: 17px;
+  }
+
+  .quiz10 .answers label {
+    font-size: 14px;
+  }
+
+  .quiz11 .answers label {
+    font-size: 16px;
+  }
+
+  .quiz17 .answers label {
+    font-size: 14px;
+  }
+}
+
+
+@media screen and (max-width: 440px) {
+  .quiz1 .answers label {
+    font-size: 18px;
+  }
+  
+  .quiz1 .question,
+  .quiz6 .question,
+  .quiz12 .question,
+  .quiz7 .question {
+    font-size: 20px;
+  }
+
+  .quiz3 .question {
+    font-size: 17px;
+  }
+
+  .quiz3 .answers label {
+    font-size: 14px;
+  }
+
+  .quiz6 .answers label {
+    font-size: 18px;
+  }
+
+  .quiz7 .answers label,
+  .quiz12 .answers label {
+    font-size: 15px;
+  }
+
+  .quiz13 .question {
+    font-size: 17px;
+  }
+
+  .quiz13 .answers label {
+    font-size: 15px;
+  }
+
+  .quiz15 .question {
+    font-size: 16px;
+  }
+
+  .quiz15 .answers label {
+    font-size: 14px;
+  }
+}
+
+
+
+/*--------- Rules for the screen at 400px --------- */
+@media screen and (max-width: 400px) {
+  .quiz2 .answers label,
+  .quiz7 .answers label,
+  .quiz8 .answers label,
+  .quiz11 .answers label,
+  .quiz14 .answers label {
+    font-size: 14px;
+  }
+
+  .quiz2 .question,
+  .quiz6 .question,
+  .quiz8 .question,
+  .quiz11 .question,
+  .quiz14 .question,
+  .quiz7 .question {
+    font-size: 16px;
+  }
+
+  .quiz3 .question,
+  .quiz7 .question {
+    font-size: 15px;
+  }
+
+  .quiz3 .answers label {
+    font-size: 13px;
+  }
+
+  .quiz5 .question,
+  .quiz6 .question {
+    font-size: 20px;
+  }
+
+  .quiz5 .answers label,
+  .quiz6 .answers label {
+    font-size: 16px;
+  }
+
+  .quiz15 .answers label {
+    font-size: 12px;
+  }
+}
+
+
+
+/* --------- Rules for the screen at 360px --------- */
+
+@media screen and (max-width:360px) {
+  .quiz3 .question {
+    font-size: 14px;
+  }
+
+  .quiz3 .answers label {
+    font-size: 12px;
+  }
+
+  .quiz12 .question {
+    font-size: 16px;
+  }
+
+  .quiz12 .answers label {
+    font-size: 14px;
+  }
+}

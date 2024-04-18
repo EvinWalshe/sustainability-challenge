@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sustainability Challenge</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat&family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js"></script>
+  </head>
+
+  <body>
+    <header class="header-fixed">
+      <div class="header-limiter">
+        <h1>
+          <a href="index.html">Sustainability<span>Challenge</span></a>
+        </h1>
+
+        <nav>
+          <a href="index.html">Home</a>
+          <a href="quizzes.html">Quizzes</a>
+          <a href="challenges.html">Challenges</a>
+          <a href="sdgs.html">SDG's</a>
+          <a href="calculator.html">Calculator</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Where all the text for the quiz will go. -->
+    <main class="calculator">
+      <h2>Carbon Emissions Calculator</h2>
+      <p>
+        Welcome to our carbon emissions calculator! This tool aims to estimate
+        your average carbon emissions per year based on a series of questions.
+        Before using this calculator, please note that it serves as an estimate
+        of carbon emissions based on common daily habits. It is not intended to
+        replace more comprehensive carbon footprint calculators, such as this
+        <a id="info-link" href="https://www.carbonfootprint.com/calculator.aspx"
+          >carbon footprint calculator</a
+        >
+        This calculator does not claim to be more accurate than existing tools.
+        <br />
+        <br />
+        Let's get started! Answer a few questions to gauge your carbon
+        emissions.
+      </p>
+      <div id="questions">
+        <div class="question" id="question1">
+          <h3>Question 1</h3>
+          <h5>How often do you eat fast food in a typical week?</h5>
+          <!-- These answers are the weekly values -->
+          <label><input type="radio" name="q1" value="0" /> Never</label><br />
+          <label><input type="radio" name="q1" value="2.66" /> 1-2 times</label
+          ><br />
+          <label><input type="radio" name="q1" value="7.98" /> 3-4 times</label
+          ><br />
+          <label
+            ><input type="radio" name="q1" value="13.3" /> 5 or more
+            times</label
+          ><br />
+        </div>
+        <!-- Add more questions similarly -->
+        <div class="question" id="question2">
+          <h3>Question 2:</h3>
+          <!-- These answers are the yearly values -->
+          <h5>
+            On average, how many hours per day do you spend using electronic
+            devices?
+          </h5>
+          <label
+            ><input type="radio" name="q2" value="63" /> Less than 1 hour</label
+          ><br />
+          <label><input type="radio" name="q2" value="70" /> 1-2 hours</label
+          ><br />
+          <label><input type="radio" name="q2" value="80" /> 3-4 hours</label
+          ><br />
+          <label
+            ><input type="radio" name="q2" value="90" /> 5 or more hours</label
+          ><br />
+        </div>
+
+        <div class="question" id="question3">
+          <h3>Question 3:</h3>
+          <h5>How often do you charge your electronic devices?</h5>
+          <!-- These answers are the yearly values -->
+          <label
+            ><input type="radio" name="q3" value="1" /> Multiple times a
+            day</label
+          ><br />
+          <label><input type="radio" name="q3" value="0.54" /> Once a day</label
+          ><br />
+          <label
+            ><input type="radio" name="q3" value="0.27" /> Every other
+            day</label
+          ><br />
+          <label
+            ><input type="radio" name="q3" value="0.1" /> Once every few
+            days</label
+          ><br />
+        </div>
+
+        <div class="question" id="question4">
+          <h3>Question 4:</h3>
+          <h5>
+            On average, how many kilometres would you drive/be driven in a week?
+          </h5>
+          <!-- These answers are the weekly values -->
+          <label><input type="radio" name="q4" value="0" /> 0</label><br />
+          <label><input type="radio" name="q4" value="2.775" /> 0-25</label
+          ><br />
+          <label><input type="radio" name="q4" value="5.55" /> 25-50</label
+          ><br />
+          <label><input type="radio" name="q4" value="8.32" /> 50-75</label
+          ><br />
+          <label><input type="radio" name="q4" value="11" /> 75-100</label
+          ><br />
+          <label><input type="radio" name="q4" value="12" /> 100+</label><br />
+        </div>
+
+        <div class="question" id="question5">
+          <h3>Question 5:</h3>
+          <h5>
+            How often do you turn off the lights when you are not in the room?
+          </h5>
+          <!-- These answers are the yearly values -->
+          <label><input type="radio" name="q5" value="0" /> Always</label><br />
+          <label
+            ><input type="radio" name="q5" value="1.916" /> I try my best, but I
+            forget sometimes</label
+          ><br />
+          <label
+            ><input type="radio" name="q5" value="3.83" /> I mostly
+            forget</label
+          ><br />
+          <label
+            ><input type="radio" name="q5" value="5.75" /> I never do it</label
+          ><br />
+        </div>
+
+        <div class="question" id="question6">
+          <h3>Question 6:</h3>
+          <h5>How often do you take a shower/bath?</h5>
+          <!-- These answers are the weekly values -->
+          <!-- Each shower is an average of 200g of carbon -->
+          <label><input type="radio" name="q6" value="0.2" /> Once a week</label
+          ><br />
+          <label
+            ><input type="radio" name="q6" value="0.4" /> 2-4 times a
+            week</label
+          ><br />
+          <label
+            ><input type="radio" name="q6" value="1" /> 5-6 times a week</label
+          ><br />
+          <label><input type="radio" name="q6" value="1.4" /> Every day</label
+          ><br />
+          <label><input type="radio" name="q6" value="2.8" /> Twice a day</label
+          ><br />
+        </div>
+
+        <div class="question" id="question3">
+          <h3>Question 7:</h3>
+          <h5>How often do you buy new t-shirts or tops?</h5>
+          <!-- Each t-shirt is 2kg -->
+          <!-- These answers are the yearly values -->
+          <label
+            ><input type="radio" name="q7" value="208" /> More than once a
+            week</label
+          ><br />
+          <label><input type="radio" name="q7" value="104" /> Once a week</label
+          ><br />
+          <label
+            ><input type="radio" name="q7" value="52" /> Once every two
+            weeks</label
+          ><br />
+          <label><input type="radio" name="q7" value="24" /> Once a month</label
+          ><br />
+          <label
+            ><input type="radio" name="q7" value="8" /> Once every 3
+            months</label
+          ><br />
+          <label><input type="radio" name="q7" value="4" /> Twice a year</label
+          ><br />
+          <label><input type="radio" name="q7" value="2" /> Once a year</label
+          ><br />
+        </div>
+
+        <div class="question" id="question3">
+          <h3>Question 8:</h3>
+          <h5>How often do you buy new jeans or trousers?</h5>
+          <!-- Each pair of jeans is 15-20kg -->
+          <!-- These answers are the yearly values -->
+          <label
+            ><input type="radio" name="q8" value="1560" /> More than once a
+            week</label
+          ><br />
+          <label><input type="radio" name="q8" value="780" /> Once a week</label
+          ><br />
+          <label
+            ><input type="radio" name="q8" value="390" /> Once every two
+            weeks</label
+          ><br />
+          <label
+            ><input type="radio" name="q8" value="180" /> Once a month</label
+          ><br />
+          <label
+            ><input type="radio" name="q8" value="60" /> Once every 3
+            months</label
+          ><br />
+          <label><input type="radio" name="q8" value="30" /> Twice a year</label
+          ><br />
+          <label><input type="radio" name="q8" value="15" /> Once a year</label
+          ><br />
+        </div>
+
+        <div class="question" id="question5">
+          <h3>Question 9:</h3>
+          <h5>
+            Do you have a reusable bottle? If so, how often do you fill it?
+          </h5>
+          <!-- These answers are the yearly values -->
+          <label
+            ><input type="radio" name="q9" value="8.632" /> No, I don't have a
+            reusable bottle</label
+          ><br />
+          <label><input type="radio" name="q9" value="0.4" /> Once a day</label
+          ><br />
+          <label><input type="radio" name="q9" value="0.4" /> Twice a day</label
+          ><br />
+          <label
+            ><input type="radio" name="q9" value="0.4" /> More than twice a
+            day</label
+          ><br />
+        </div>
+      </div>
+      <button id="calculate" class="calculate-button">Calculate</button>
+      <div id="result" style="display: none">
+        <h3 class="calc-results">Results:</h3>
+        <p id="score"></p>
+        <a id="info-link-q1" href="results.html"
+          >Click here to see how these calculations are done and where this
+          information is coming from</a
+        >
+      </div>
+
+      <script src="calculator.js"></script>
+    </main>
+
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+      <a href="index.html">Home</a>
+      <a href="quizzes.html">Quizzes</a>
+      <a href="challenges.html">Challenges</a>
+      <a href="sdgs.html">SDG's</a>
+      <a href="calculator.html">Calculator</a>
+    </div>
+
+    <footer>
+      <div class="row inner">
+        <span class="copyright"> @Sustainability Challenge 2024 </span>
+
+        <span class="meta">
+          <ul class="links">
+            <a href="index.html">Home</a>
+            <a href="quizzes.html">Quizzes</a>
+            <a href="challenges.html">Challenges</a>
+            <a href="sdgs.html">SDG's</a>
+            <a href="calculator.html">Calculator</a>
+          </ul>
+        </span>
+      </div>
+    </footer>
+
+    <span class="navside" onclick="openNav()">☰</span>
+  </body>
+</html>

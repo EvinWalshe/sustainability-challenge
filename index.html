@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sustainability Challenge</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <header class="header-fixed">
+
+    <div class="header-limiter">
+
+      <h1><a href="index.html">Sustainability<span>Challenge</span></a></h1>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="quizzes.html">Quizzes</a>
+        <a href="challenges.html">Challenges</a>
+        <a href="sdgs.html">SDG's</a>
+        <a href="calculator.html">Calculator</a>
+      </nav>
+    </div>
+
+  </header>
+
+  <!-- MAIN CONTENT HERE -->
+
+  <section class="hero">
+    <div class="hero-content">
+
+      <h1>Sustainability Challenge</h1>
+      <h3>"Take part in challenges, test yourself with quizzs, read notes and have fun!"</h3>
+    </div>
+  </section>
+
+
+
+  <main>
+    <section class="intro">
+      <h1>Welcome to the Sustainability Challenge!</h1>
+      <div class="container-with-text">
+        <div class="text">
+          <div class="image-right">
+            <img src="images/UN-logo.jpg" alt="UN logo">
+          </div>
+          <p>
+            Here, we embark a journey aimed at tackling one of the most pressing issues of our time: Sustainability.
+            This website will teach you about the 17 Sustainable Development Goals set out by the UN.
+            As we stand right now, the world is making progress towards a sustainable future, but we are far from
+            complete.
+            This platform will serve as a guide for those who want to make a difference to their future.
+            Together, we tackle the complex challenges facing our planet head on, seeking solutions and fostering a
+            community dedicated to shaping a more sustainable future.
+          </p>
+
+          <p>
+            This website offers a wide range of information on the sustainable development goals and how they can be
+            implemented into your life. Quizzes that test your knowledge on sustainability. Challenges that provide a
+            sense of fulfillment while promoting sustainability principles.
+
+          <p class="quote-text">
+            Join us as we embark on this inspiring adventure, where every action, no matter how small, makes a
+            meaningful difference in preserving our planet for generations to come.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="tiles">
+      <div class="tile-container">
+        <!-- Flip Card # 1 -->
+        <div class="flip-card" style="width: auto; height: 350px;" onclick="flipCard(this)">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h1>What is Sustainability</h1>
+            </div>
+            <div class="flip-card-back">
+              <p class="card-text">
+                Sustainability is like taking care of our planet for the long haul. It's about making choices today that
+                ensure we'll have a healthy, thriving world tomorrow and for generations to come.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Flip card #2 -->
+        <div class="flip-card" style="width: auto; height: 350px;" onclick="flipCard(this)">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h1>What are the 17 Sustainable Development Goals?</h1>
+            </div>
+            <div class="flip-card-back">
+              <p class="card-text">
+                The 17 Sustainable Development Goals are an urgent call for action set out by the UN in 2015. They are
+                goals that they aim every country to strive for by the year 2030.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Flip Card #3 -->
+        <div class="flip-card" style="width: auto; height: 350px;" onclick="flipCard(this)">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h1>What are the "Challenges"?</h1>
+            </div>
+            <div class="flip-card-back">
+              <p class="card-text">
+                These are a set of tasks that can be completed by you, and your peers, to improve sustainable practices
+                within your life.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- Flip card #4 -->
+        <div class="flip-card" style="width: auto; height: 350px;" onclick="flipCard(this)">
+          <div class="flip-card-inner">
+            <div class="flip-card-front">
+              <h1>Why should I care?</h1>
+            </div>
+            <div class="flip-card-back">
+              <p class="card-text">
+                Caring about sustainability is not just about the environment; it's about safeguarding our future. By
+                embracing sustainability, we ensure that resources are available for generations to come, mitigate the
+                impact of climate change, promote social equity, and foster economic stability.
+              </p>
+            </div>
+          </div>
+        </div>
+    </section>
+
+
+    <div class="container">
+
+      <div class="information">
+        <h1>What is on this website?</h1>
+
+        <section class="contained">
+
+          <div class="content">
+            <!-- Challenge box on homepage -->
+            <div class="content-item">
+              <a href="challenges.html" class="bg-clip">
+                Challenges
+                <span>Outlined by the UN</span>
+              </a>
+              <p>
+                These challenges provide an opportunity to integrate sustainability into your daily life.<br>
+                With varying lengths, difficulties, and collaboration requirements, they offer a chance to embrace
+                sustainability in practical ways. <br>
+                Start now and make sustainability a meaningful part of your life!
+              </p>
+            </div>
+
+            <!-- Quizzes box on homepage -->
+            <div class="content-item">
+              <a href="quizzes.html" class="bg-clip">
+                Quizzes
+                <span>Test your knowledge!</span>
+              </a>
+              <p>
+                The Quizzes are an excellent way for you to test your knowledge on sustainability. <br>
+                There is a quiz for each of the 17 Sustainable Development Goals. <br>
+                Is this your first time? Or are you trying to beat your past score? <br>
+                Good luck!
+              </p>
+            </div>
+
+            <!-- SDG Box on homepage -->
+            <div class="content-item">
+              <a href="sdgs.html" class="bg-clip">
+                SDG's
+                <span>Outlined by the UN</span>
+              </a>
+              <p>
+                Embark on a journey with the United Nations to transform our world! Click here to delve into the
+                Sustainable Development Goals (SDGs) and join the global movement towards a more just, prosperous, and
+                sustainable future for all
+              </p>
+            </div>
+
+            <!-- Calculator Box on homepage -->
+            <div class="content-item">
+              <a href="calculator.html" class="bg-clip">
+                Calculator
+                <span>Calculate your score</span>
+              </a>
+              <p>
+                Everyone has a carbon footprint in this world. Try this calculator to see what little habits you can
+                fix, to try and make this world a bit better!
+              </p>
+            </div>
+
+          </div>
+
+        </section>
+
+
+        <h1>Final Paragraph</h1>
+        <p>
+          As you explore this website dedicated to educating and empowering students about the 17 Sustainable
+          Development Goals (SDGs) outlined by the United Nations, I invite you to delve into the wealth of information,
+          challenges, and quizzes designed to foster a deeper understanding and engagement with global sustainability
+          efforts. My name is Evin Walshe, and this project has been a passion of mine for the past 3 months. I've
+          dedicated my time to crafting this website, aiming to capture your attention and contribute to making the
+          world a better place, one step at a time. I hope that you find value in this website and that it challenges
+          you to reflect on your actions and their impact on our journey towards a more sustainable future.
+        </p>
+        <h3>
+          Thank you for joining me on this journey, and I hope you enjoy exploring the website.
+        </h3>
+
+      </div>
+
+    </div>
+  </main>
+
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="index.html">Home</a>
+    <a href="quizzes.html">Quizzes</a>
+    <a href="challenges.html">Challenges</a>
+    <a href="sdgs.html">SDG's</a>
+    <a href="calculator.html">Calculator</a>
+  </div>
+
+  <footer>
+    <div class="row inner">
+      <span class="copyright">
+        @Sustainability Challenge 2024
+      </span>
+
+      <span class="meta">
+        <ul class="links">
+          <a href="index.html">Home</a>
+          <a href="quizzes.html">Quizzes</a>
+          <a href="challenges.html">Challenges</a>
+          <a href="sdgs.html">SDG's</a>
+          <a href="calculator.html">Calculator</a>
+        </ul>
+        <!-- 645px  -->
+      </span>
+    </div>
+  </footer>
+  <!--
+  Do not remove below content OR site will break.
+  -->
+
+  <span class="navside" onclick="openNav()">☰</span>
+
+</body>
+
+<script src="./script.js"></script>
+
+</html>
+
+</html>
