@@ -138,16 +138,29 @@ function showResults() {
   let numCorrect = 0;
 
   myQuestions.slice(0, 5).forEach((currentQuestion, questionNumber) => {
-      const answerContainer = answerContainers[questionNumber];
-      const selector = `input[name=question${questionNumber}]:checked`;
-      const userAnswer = (answerContainer.querySelector(selector) || {}).value;
+    const answerContainer = answerContainers[questionNumber];
+    const selector = `input[name=question${questionNumber}]:checked`;
+    const userAnswer = (answerContainer.querySelector(selector) || {}).value;
+    const correctAnswer = currentQuestion.correctAnswer;
 
-      if (userAnswer === currentQuestion.correctAnswer) {
-          numCorrect++;
-          answerContainers[questionNumber].style.color = "darkgreen";
+    // Loop through all answers and mark correct answer in green
+    for (letter in currentQuestion.answers) {
+      const answerElement = answerContainer.querySelector(`input[value=${letter}]`).parentNode;
+      if (letter === correctAnswer) {
+        answerElement.style.color = "green"; // Mark correct answer in green
       } else {
-          answerContainers[questionNumber].style.color = "red";
+        answerElement.style.color = ""; // Reset color for incorrect answers
       }
+    }
+
+    if (userAnswer === correctAnswer) {
+      numCorrect++;
+    } else {
+      if (userAnswer) {
+        const userAnswerElement = answerContainer.querySelector(`input[value=${userAnswer}]`).parentNode;
+        userAnswerElement.style.color = "red"; // Highlight incorrect user answer in red
+      }
+    }
   });
 
   resultsContainer.innerHTML = `${numCorrect} out of 5`;

@@ -148,17 +148,31 @@
       const answerContainer = answerContainers[questionNumber];
       const selector = `input[name=question${questionNumber}]:checked`;
       const userAnswer = (answerContainer.querySelector(selector) || {}).value;
+      const correctAnswer = currentQuestion.correctAnswer;
 
-      if (userAnswer === currentQuestion.correctAnswer) {
+      // Loop through all answers and mark correct answer in green
+      for (letter in currentQuestion.answers) {
+        const answerElement = answerContainer.querySelector(`input[value=${letter}]`).parentNode;
+        if (letter === correctAnswer) {
+          answerElement.style.color = "green"; // Mark correct answer in green
+        } else {
+          answerElement.style.color = ""; // Reset color for incorrect answers
+        }
+      }
+
+      if (userAnswer === correctAnswer) {
         numCorrect++;
-        answerContainers[questionNumber].style.color = "green";
       } else {
-        answerContainers[questionNumber].style.color = "red";
+        if (userAnswer) {
+          const userAnswerElement = answerContainer.querySelector(`input[value=${userAnswer}]`).parentNode;
+          userAnswerElement.style.color = "red"; // Highlight incorrect user answer in red
+        }
       }
     });
 
     resultsContainer.innerHTML = `${numCorrect} out of 5`;
   }
+
 
   function showSlide(n) {
     slides[currentSlide].classList.remove("active-slide");

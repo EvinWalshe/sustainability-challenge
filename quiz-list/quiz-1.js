@@ -146,24 +146,57 @@
   }
   
   
-  function showResults() {
-    const answerContainers = quizContainer.querySelectorAll(".answers");
-    let numCorrect = 0;
+//   function showResults() {
+//     const answerContainers = quizContainer.querySelectorAll(".answers");
+//     let numCorrect = 0;
 
-    myQuestions.slice(0, 5).forEach((currentQuestion, questionNumber) => {
-        const answerContainer = answerContainers[questionNumber];
-        const selector = `input[name=question${questionNumber}]:checked`;
-        const userAnswer = (answerContainer.querySelector(selector) || {}).value;
+//     myQuestions.slice(0, 5).forEach((currentQuestion, questionNumber) => {
+//         const answerContainer = answerContainers[questionNumber];
+//         const selector = `input[name=question${questionNumber}]:checked`;
+//         const userAnswer = (answerContainer.querySelector(selector) || {}).value;
 
-        if (userAnswer === currentQuestion.correctAnswer) {
-            numCorrect++;
-            answerContainers[questionNumber].style.color = "darkgreen";
-        } else {
-            answerContainers[questionNumber].style.color = "red";
-        }
-    });
+//         if (userAnswer === currentQuestion.correctAnswer) {
+//             numCorrect++;
+//             answerContainers[questionNumber].style.color = "darkgreen";
+//         } else {
+//             answerContainers[questionNumber].style.color = "red";
+//         }
+//     });
 
-    resultsContainer.innerHTML = `${numCorrect} out of 5`;
+//     resultsContainer.innerHTML = `${numCorrect} out of 5`;
+// }
+
+function showResults() {
+  const answerContainers = quizContainer.querySelectorAll(".answers");
+  let numCorrect = 0;
+
+  myQuestions.slice(0, 5).forEach((currentQuestion, questionNumber) => {
+      const answerContainer = answerContainers[questionNumber];
+      const selector = `input[name=question${questionNumber}]:checked`;
+      const userAnswer = (answerContainer.querySelector(selector) || {}).value;
+      const correctAnswer = currentQuestion.correctAnswer;
+
+      // Loop through all answers and mark correct answer in green
+      for (letter in currentQuestion.answers) {
+          const answerElement = answerContainer.querySelector(`input[value=${letter}]`).parentNode;
+          if (letter === correctAnswer) {
+              answerElement.style.color = "green"; // Mark correct answer in green
+          } else {
+              answerElement.style.color = ""; // Reset color for incorrect answers
+          }
+      }
+
+      if (userAnswer === correctAnswer) {
+          numCorrect++;
+      } else {
+          if (userAnswer) {
+              const userAnswerElement = answerContainer.querySelector(`input[value=${userAnswer}]`).parentNode;
+              userAnswerElement.style.color = "red"; // Highlight incorrect user answer in red
+          }
+      }
+  });
+
+  resultsContainer.innerHTML = `${numCorrect} out of 5`;
 }
 
   

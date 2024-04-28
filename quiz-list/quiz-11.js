@@ -1,4 +1,4 @@
-(function() {
+(function () {
   const myQuestions = [
     {
       question: "What is the main focus of SDG 11 (Sustainable Cities and Communities)?",
@@ -101,74 +101,87 @@
       correctAnswer: "b"
     }
   ]
-  ;
+    ;
 
   function getRandomSubset(array, size) {
     const shuffled = array.sort(() => 0.5 - Math.random());
     return shuffled.slice(0, size);
-}
+  }
 
-function buildQuiz() {
+  function buildQuiz() {
     const randomQuestions = getRandomSubset(myQuestions, 5); // Get 5 random questions
     const output = [];
 
     randomQuestions.forEach((currentQuestion, questionNumber) => {
-        const answers = [];
+      const answers = [];
 
-        for (letter in currentQuestion.answers) {
-            answers.push(
-                `<label>
+      for (letter in currentQuestion.answers) {
+        answers.push(
+          `<label>
                     <input type="radio" name="question${questionNumber}" value="${letter}">
                     ${letter} :
                     ${currentQuestion.answers[letter]}
                 </label>`
-            );
-        }
+        );
+      }
 
-        output.push(
-            `<div class="slide">
+      output.push(
+        `<div class="slide">
                 <div class="question"> ${currentQuestion.question} </div>
                 <div class="answers"> ${answers.join("")} </div>
             </div>`
-        );
+      );
     });
 
     quizContainer.innerHTML = output.join("");
-}
+  }
 
 
-function showResults() {
-  const answerContainers = quizContainer.querySelectorAll(".answers");
-  let numCorrect = 0;
+  function showResults() {
+    const answerContainers = quizContainer.querySelectorAll(".answers");
+    let numCorrect = 0;
 
-  myQuestions.slice(0, 5).forEach((currentQuestion, questionNumber) => {
+    myQuestions.slice(0, 5).forEach((currentQuestion, questionNumber) => {
       const answerContainer = answerContainers[questionNumber];
       const selector = `input[name=question${questionNumber}]:checked`;
       const userAnswer = (answerContainer.querySelector(selector) || {}).value;
+      const correctAnswer = currentQuestion.correctAnswer;
 
-      if (userAnswer === currentQuestion.correctAnswer) {
-          numCorrect++;
-          answerContainers[questionNumber].style.color = "darkgreen";
-      } else {
-          answerContainers[questionNumber].style.color = "red";
+      // Loop through all answers and mark correct answer in green
+      for (letter in currentQuestion.answers) {
+        const answerElement = answerContainer.querySelector(`input[value=${letter}]`).parentNode;
+        if (letter === correctAnswer) {
+          answerElement.style.color = "green"; // Mark correct answer in green
+        } else {
+          answerElement.style.color = ""; // Reset color for incorrect answers
+        }
       }
-  });
 
-  resultsContainer.innerHTML = `${numCorrect} out of 5`;
-}
+      if (userAnswer === correctAnswer) {
+        numCorrect++;
+      } else {
+        if (userAnswer) {
+          const userAnswerElement = answerContainer.querySelector(`input[value=${userAnswer}]`).parentNode;
+          userAnswerElement.style.color = "red"; // Highlight incorrect user answer in red
+        }
+      }
+    });
+
+    resultsContainer.innerHTML = `${numCorrect} out of 5`;
+  }
 
 
   function showSlide(n) {
     slides[currentSlide].classList.remove("active-slide");
     slides[n].classList.add("active-slide");
     currentSlide = n;
-    
+
     if (currentSlide === 0) {
       previousButton.style.display = "none";
     } else {
       previousButton.style.display = "inline-block";
     }
-    
+
     if (currentSlide === slides.length - 1) {
       nextButton.style.display = "none";
       submitButton.style.display = "inline-block";
