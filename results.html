@@ -1,277 +1,326 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sustainability Challenge</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Caveat&family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
-  </head>
 
-  <body>
-    <header class="header-fixed">
-      <div class="header-limiter">
-        <h1>
-          <a href="index.html">Sustainability<span>Challenge</span></a>
-        </h1>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sustainability Challenge</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js"></script>
+</head>
 
-        <nav>
+<body>
+  <header class="header-fixed">
+    <div class="header-limiter">
+      <h1>
+        <a href="index.html">Sustainability<span>Challenge</span></a>
+      </h1>
+
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="quizzes.html">Quizzes</a>
+        <a href="challenges.html">Challenges</a>
+        <a href="sdgs.html">SDG's</a>
+        <a href="calculator.html">Calculator</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Question 1 results and calculations -->
+    <section class="results">
+      <h3>Question 1: How often do you eat fast food in a typical week?</h3>
+      <h5>Fast Food vs. Food Cooked at Home</h5>
+      <p>
+        According to <a
+          href="https://www.sciencedirect.com/science/article/pii/S095965262030977X?casa_token=uk41RWig0YoAAAAA:QCB1xTf3ECv85t-uYqlKqqN-81PC6-KGN45tVfRiHBRRYCnYHH_ySUTqQTXM6wcsIQ5EEzhMY3E">this
+          study</a>, the average consumption of Food Away From Home (FAFH), or fast food, is roughly 4.3 kg of CO2 per
+        kg of food. Food cooked at home (FAH) is around 2.7 kg of CO2 per kg of food. This results in a difference of
+        1.6 kg of CO2 per kg of food between fast food and home-cooked food.
+      </p>
+
+      <h5>Carbon Emissions of Specific Fast Food Items</h5>
+      <p>
+        <a href="https://plantbasednews.org/news/environment/big-mac-carbon-footprint/">Carbon emissions</a> for one Big
+        Mac are estimated to be 2.35 kg. The average weight of a Big Mac is 240 grams according to <a
+          href="https://www.mcdonalds.com/gb/en-gb/help/faq/what-s-the-average-weight-in-grams-of-a-big-mac.html">McDonald's</a>.
+        Therefore, the average carbon emissions per gram of a Big Mac can be calculated as (1.6+ 2.35) = 1.975 kg / 240
+        grams = 8.22 grams of CO2 per gram of food.
+      </p>
+
+      <h5>Carbon Emissions from Eating Out</h5>
+      <p>
+        Mcdonalds also claim that all their food in Ireland, comes from Irish sources so all the above calculations
+        could in theory be applied to other fast food restaurants. Based on the above calculations, we will find the
+        average weight of a general fast food takeway: Fish and chips at <a
+          href="https://www.nfff.co.uk/pages/nutritional-info">450 grams</a>. A medium big mac burger and <a
+          href="https://www.mcdonalds.com/gb/en-gb/help/faq/how-much-do-small--medium-and-large-fries-weigh.html">chips</a>
+        comes to 354 grams (240 + 114). Therefore, we can find the average size of a takeway to be (450 + 354)/2 = 402
+        grams. Multiplied by the average carbon emission per gram will then give us an estimate of how much carbon is
+        released for a takeaway. 8.22 * 402 = 3.304 kg / CO2 per takeaway.
+      </p>
+
+      <h5>Conclusion</h5>
+      <p>
+        In summary, opting for home-cooked meals over fast food can significantly reduce carbon emissions. While fast
+        food may be convenient, it carries a substantial environmental cost. Choosing sustainable options and advocating
+        for eco-friendly practices within the fast food industry can help mitigate its impact on the environment.
+      </p>
+    </section>
+
+
+    <section class="results">
+      <h3>
+        Question 2: On average, how many hours per day do you spend using
+        electronic devices?
+      </h3>
+
+      <h5>Screentime per Hour - by article</h5>
+      <p> <a
+          href="https://infomineo.com/technology-telecommunication/how-smartphones-are-contributing-to-climate-change/#:~:text=Research%20on%20the%20annual%20carbon,per%20day%2C%20for%20a%20year">Infimineo</a>
+        estimates that the average carbon emissions for one hour of screentime is equivalent to 63 Kilograms of CO2
+        emitted. <a
+          href="https://reboxed.co/blogs/outsidethebox/the-carbon-footprint-of-your-phone-and-how-you-can-reduce-it ">This</a>
+        article claims that there are 7.7 Billion phones in use in the world and that there was 580 million tonnes of
+        CO2 emitted from phones in the year. From these articles, it states that for an hour on your phone every day, 63
+        KG of CO2 is produced per year. I am here to challenge these figures.
+
+      </p>
+
+      <h5>Breakdown of Apple Products' Emissions</h5>
+      <p>
+        Detailed reports from <a href="https://www.apple.com/uk/environment/">Apple</a> provide insights into the carbon
+        emissions associated with their products. For specific data on Apple products, refer to the detailed reports
+        available on their website. These reports give specific carbon emissions for the usage of the phone, with a
+        range between 11-18%. The average of all these phones was 15.56%. These are apple phones and does not count for
+        Android devices.
+      </p>
+
+      <h5>Phones and Their Carbon</h5>
+      <p>
+        "<a href="https://profilebooks.com/work/how-bad-are-bananas/">How Bad Are Bananas?</a>" by Miker Berners-Lee is
+        a detailed report of the how much carbon emissions are produced from items that are used daily. Within the
+        report, it was found that, from phones, ther are 570 Million tonnes of CO2 emissions per year. Very similar to
+        what is above, but for arguments sake, we will take the 570 million tonnes.
+        <br> <a href="https://data.worldbank.org/indicator/IT.CEL.SETS">The World Bank</a> states there is around 8.27
+        Biliion phones in use around the world.
+      </p>
+
+      <h5>Calculations and Conclusion</h5>
+      <p>
+        From these sources, we can find the average amount of CO2 produced per year. 520 Million / 8.27 Billion = 68.92
+        Kg per year per phone
+        <br> 68.92 KG of CO2 for every phone (on average). But, that includes the construction and transport of the
+        phone. I am only interested in the usage. So we need to multiply by 15.56%. 68.92 * 15.56 = 10.73 Kg. 10.73
+        Kilograms of Carbon, every year for using your phone.
+      </p>
+    </section>
+
+    <section class="results">
+      <h3>Question 3: How often do you charge your electronic devices?</h3>
+      <h5>Calculations</h5>
+      <p>
+        <a id="info-link"
+          href="https://www.comparethemarket.com.au/energy/features/carbon-footprint-of-phone-charging/">Compare the
+          Market</a>
+        gives fairly extensive research into the estimated carbon fotoprint of charging your phone. They assumed a
+        five-watt charge for all phones (which is the current standar for phone charging). That the phone was charge for
+        one hour, every day. From this, the average amount of electricity used to charge a phone, per year, was 1.825
+        kilowatt-hours (kWh). Then, to delve further into detail, they found the emissions factor for every continent.
+        For Europe (Ireland), it was found that charging your phone for an hour every day leads to 0.54kg CO2 per year.
+        This is not a lot.
+      </p>
+
+      <h5>Putting into perspective</h5>
+      <p>
+        In the grand scheme of things, this might seem quite small, but to put this into perspective how much would
+        would be produced if EVERYONE in the world only charged for one hour? Luckily, they provide us with this
+        statistic.
+        <br>
+        This, in total, would equal to 8,088,324 tonnes of CO2 being produced. When everyone has these habits, it
+        creates a world with serious consequences.
+      </p>
+    </section>
+
+    <section class="results">
+      <h3>
+        Question 4: On average, how many kilometres would you drive/be driven
+        in a week?
+      </h3>
+      <h5>SEAI and their data</h5>
+      <p>
+        The
+        <a id="info-link"
+          href="https://www.seai.ie/data-and-insights/seai-statistics/key-statistics/transport/">SEAI</a>
+        gives us a rough estimate of how much carbon emissions are produce per
+        kilometre travelled. 111g per kilometre. As students, perhaps you
+        might not be driving as much as adults, but it is important to
+        consider for those who drive to school rather than taking the bus,
+        cycling or walking.
+      </p>
+
+      <h5>
+        Questioning the Calculations
+      </h5>
+      <p>
+        For these calculations, more data is needed for there to be a better average.<a
+          href="https://www.bbva.es/en/general/sostenibilidad/soluciones-para-personas/huella-de-carbono-personas/repositorio/conducir-1-km-en-coche.html#:~:text=Driving%201%20km%20emits%20121%20g%20of%20CO2%20%7C%20BBVA&text=Switch%20to%20BBVA%20and%20we,all%20the%20paperwork%20for%20you.&text=Calculate%20your%20savings%20with%20solar%20panels%20in%20your%20home">The
+          BBVA</a> states that drving 1 km gives 121 gram of CO2.
+        <br>
+        <a
+          href="https://co2cars.apps.eea.europa.eu/?source=%7B%22track_total_hits%22%3Atrue%2C%22query%22%3A%7B%22bool%22%3A%7B%22must%22%3A%7B%22bool%22%3A%7B%22must%22%3A%5B%7B%22constant_score%22%3A%7B%22filter%22%3A%7B%22bool%22%3A%7B%22must%22%3A%5B%7B%22bool%22%3A%7B%22should%22%3A%5B%7B%22term%22%3A%7B%22year%22%3A2022%7D%7D%5D%7D%7D%2C%7B%22bool%22%3A%7B%22should%22%3A%5B%7B%22term%22%3A%7B%22scStatus%22%3A%22Final%22%7D%7D%5D%7D%7D%5D%7D%7D%7D%7D%5D%7D%7D%2C%22filter%22%3A%7B%22bool%22%3A%7B%22must%22%3A%5B%7B%22bool%22%3A%7B%22should%22%3A%5B%7B%22term%22%3A%7B%22Mh%22%3A%22TOYOTA%22%7D%7D%5D%7D%7D%2C%7B%22bool%22%3A%7B%22should%22%3A%5B%7B%22term%22%3A%7B%22Cn%22%3A%22TOYOTA%20COROLLA%22%7D%7D%5D%7D%7D%5D%7D%7D%7D%7D%2C%22display_type%22%3A%22tabular%22%7D">European
+          Environment Agency</a> gives a full rundown of how much a car is affecting the world around it. From this, a
+        Toyot Corrolla will be assumed as it was <a
+          href="https://ptcgroup.global/top-10-best-selling-cars-worldwide-in-2022/">the most popular</a> car of 2022.
+        <br>
+        The Toyota Corrolla produces an average of 112 grams per km. Therefore the average can be found. (112+111+121)/3
+        = 114.66 grams of CO2 per Km driven.
+      </p>
+    </section>
+
+    <section class="results">
+      <h3>
+        Question 5: How often do you turn off the lights when you are not in
+        the room?
+      </h3>
+      <h5>The Carbon of Light Bulbs</h5>
+      <p>
+        <a id="info-link" href="https://www.ipcc.ch/site/assets/uploads/2018/05/SYR_AR5_FINAL_full_wcover.pdf">IPCC</a>
+        and their climate change report details different carbon emissions dependant on the type of power used. With:
+        <br> Solar at 41g CO2 / kWh
+        <br> Gas at 290-930g CO2 / kWh
+        <br> Oil at 510-1170g CO2 / kWh
+
+        <br> From these, we can find the average a lightbulb powered at 60 KW and fueled by oil (510 for arguments sake)
+        and find out how much carbon is produced for each hour it is active. 60KW in kWh = 0.06 kW. Multiplied by 510 =
+        (510*0.06) = 30.6 grams of CO2 per hour.
+      </p>
+    </section>
+
+    <section class="results">
+      <h3>Question 6: How often do you take a shower/bath?</h3>
+      <h5>How much a shower produces</h5>
+      <p>
+        <a href="https://www.harwoodandassociates.co.uk/faqs/guidance-on-flow-rates-for-taps-showers-and-baths/">Flow
+          rates</a> of a shower can have different flow rates depending on whether the system is high pressure or not.
+        For this example however, a flow rate of 15 Litres/min will be chosen. At 5 minutes a shower this ends up at 75
+        Liters of water per shower.
+      </p>
+
+      <h5>Calculations</h5>
+      <p>
+        A <a
+          href="https://heatable.co.uk/boiler-advice/heat-pumps-vs-gas-boilers#:~:text=A%20modern%20A%2Drated%20gas,when%20it%20comes%20to%20boilers">modern
+          A-rated</a> gas boiler will emit 215 grams of CO2 / kWh of heat. Next, we need to convert the volume of water
+        (75 liters) into energy used to heat it. Assuming the water starts at around 10°C (typical cold water
+        temperature), and we want it to reach a comfortable shower temperature of around 38°C, we'll need to heat it by:
+        <br>
+        38°C - 10°C = 28°C
+        <br>
+        Energy = mass of water * specific heat capacity * temperature change
+        <br>
+        75 litres * 1000 grams/litre * 4.186 J/g°C * 28°C = 8,790,600 Joules
+        <br>
+        Now, we need to convert this energy from Joules to kWh (kiloWatt-hours), since the CO2 emissions are typically
+        measured per kWh.
+        <br>
+        1 kWh = 3.6 × 10^6 Joules
+        <br>
+        8,790,600 Joules / (3.6 × 10^6 Joules/kWh) = 2.4425 kWh
+        <br>
+        CO2 emissions per kWh = 215 grams
+        <br>
+        CO2 emissions for the shower = Energy used * CO2 emissions per kWh
+        <br>
+        CO2 emissions for the shower = 2.4425 kWh * 215 grams/kWh = 525.1375 grams
+
+      </p>
+    </section>
+
+    <section class="results">
+      <h3>
+        Question 7: How often do you buy new t-shirts or tops?
+      </h3>
+      <h5>A T-shirts Life-Cycle</h5>
+      <p>
+        <a id="info-link" href="https://www.researchgate.net/profile/Elif-Gamze-Taskin/publication/328631461_LIFE_CYCLE_ASSESSMENT_OF_A_COTTON_T-SHIRT/links/606dbf814585150fe98de19d/LIFE-CYCLE-ASSESSMENT-OF-A-COTTON-T-SHIRT.pdf">Ali RÜZGAR</a>
+        researched what it takes to create a T-shirt and what it means for the enivironment. For a cotton T-shirt,
+        weighing at 175 grams, would equivalate to 8.46 Kg of CO2 being created.
+        <br>
+        However, this also included the usage phase, which included the washing and drying of the t-shirt, so for ONLY
+        buying a t-shirt this would be create 5.29 Kg of CO2.
+      </p>
+    </section>
+
+    <section class="results">
+      <h3>
+        Question 8: How often do you buy new jeans or trousers?
+      </h3>
+      <h5>The Damage of Jeans</h5>
+      <p>
+        <a id="info-link" href="https://levistrauss.com/wp-content/uploads/2015/03/Full-LCA-Results-Deck-FINAL.pdf">Levi's</a>
+        Have provided a guide to how much carbon goes into making one pair of jeans. From this it was found that a new pair of jeans from creation until the "end of life" stage, will produce 33.4 kg of carbon emissions.
+        <br> 2.9kg for Fiber
+        <br> 9.0kg for Fabric Assembly
+        <br> 2.6 for Cut, Sew and Finish
+        <br> 1.7kg for Sundries and Packaging
+        <br> 3.8kg for Transport
+        <br> 12.5 for Consumer Care
+        <br> However, the consumer care is not essential for this calculation, therefore it can be removed. With that, it is found that by buying a new pair of jeans, it will cost 20kg of CO2 being emitted, all just as you leave the shop.
+      </p>
+    </section>
+
+    <section class="results">
+      <h3>Question 9: Do you have a reusable water bottle?</h3>
+      <h5>Re-usable vs Plastic</h5>
+      <p>
+        <a id="info-link"
+          href="https://apps.carboncloud.com/climatehub/product-reports/id/152490668293">CarbonCloud</a>
+        is a company that has spent the past 20 years dedicating itself to creating software that calculates the carbon footprint of items. They claim, the 1 Litre PET water bottle (plastic) creates 280 grams per bottle.
+        <br>
+        In 2012,  <a id="info-link" href="https://apps.carboncloud.com/climatehub/product-reports/id/152490668293">Beverage Industry Environmental Roundtable</a> claimes that it only costs 163 grams per 1.5 Litre bottle. 
+        <br>
+        <a id="info-link" href="https://profilebooks.com/work/how-bad-are-bananas/"> How Bad Are Bananas?</a> states that a plastic bottle is 103 grams.
+        <br> So which one is the most accurate? Well that is hard to prove fully, so for this argument, we will assume it is only 103 grams per 1 litre plastic bottle.
+
+      
+        <br>
+        <br>
+        <a id="info-link" href="https://apps.carboncloud.com/climatehub/product-reports/id/152490668293">Nestle</a> carried out a study in 2010 to try and find out how much a reusable bottle beats a plastic bottle? They found that, depending on the material the reusable bottle is made from, creating a reusable bottle produces just under 2kg of CO2. So, by that logic, for a reusable bottle to break even on the "most" sustainable plastic bottle of 103 grams, the reusable bottle would need to be filled 20 times.<br>
+        This does not include the life-cycle of the reusable bottle but solely the buying and use of the bottles.
+      </p>
+    </section>
+  </main>
+
+  <div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="index.html">Home</a>
+    <a href="quizzes.html">Quizzes</a>
+    <a href="challenges.html">Challenges</a>
+    <a href="sdgs.html">SDG's</a>
+    <a href="calculator.html">Calculator</a>
+  </div>
+
+  <footer>
+    <div class="row inner">
+      <span class="copyright"> ©WebsiteName 2024 </span>
+
+      <span class="meta">
+        <ul class="links">
           <a href="index.html">Home</a>
           <a href="quizzes.html">Quizzes</a>
           <a href="challenges.html">Challenges</a>
           <a href="sdgs.html">SDG's</a>
           <a href="calculator.html">Calculator</a>
-        </nav>
-      </div>
-    </header>
-
-    <main>
-      <section class="question-one">
-        <h3>Question 1: How often do you eat fast food in a typical week?</h3>
-        <p>
-          According to
-          <a
-            href="https://plantbasednews.org/news/environment/big-mac-carbon-footprint/"
-            target="_blank"
-            >this website</a
-          >, roughly one Big Mac meal results in 2.35kg of carbon emissions
-          being emitted into the atmosphere. The website is dedicated to a
-          vegetarian lifestyle, ensuring the accuracy of these references.
-        </p>
-
-        <p>
-          Additionally,
-          <a
-            href="https://www.sciencedirect.com/science/article/pii/S095965262030977X?casa_token=uk41RWig0YoAAAAA:QCB1xTf3ECv85t-uYqlKqqN-81PC6-KGN45tVfRiHBRRYCnYHH_ySUTqQTXM6wcsIQ5EEzhMY3E"
-            target="_blank"
-            >a research paper</a
-          >
-          indicates the carbon emissions of eating food at home versus eating at
-          a restaurant or takeaway. Considering that food must be consumed
-          regardless, the emissions from food eaten at home were subtracted from
-          those at a takeaway, resulting in an average emissions rate of around
-          1.6kg of CO2 per kg of food.
-        </p>
-
-        <p>
-          Based on these sources, the average between both values is assumed to
-          represent the total carbon emissions for each meal outside of your
-          home, which amounts to approximately 1.975kg or 2kg of CO2.
-          <br />
-          <br />
-          Therefore, if you were to order takeaway, once a week, this would
-          equate to around 104 Kilograms of C02 being emitted into the
-          atmosphere.To put that into perspective, this is the same as if you
-          were to drive 937 kilometres in a car!
-        </p>
-      </section>
-
-      <section class="question-two">
-        <h3>
-          Question 2: On average, how many hours per day do you spend using
-          electronic devices?
-        </h3>
-        <p>
-          According to
-          <a
-            id="info-link"
-            href="https://infomineo.com/technology-telecommunication/how-smartphones-are-contributing-to-climate-change/#:~:text=Research%20on%20the%20annual%20carbon,per%20day%2C%20for%20a%20year"
-            >this</a
-          >
-          website, it says that by using your phone for only one hour a day
-          leads to 63 kilograms a year of carbon emissions being produced into
-          the atmosphere.
-
-          <br />
-          <br />
-          63 kilograms is about the same as driving 568 kilometres in a car. Its
-          very scary to think about that by using your phone for an hour each
-          day over a year, is equal to driving that much distance...
-        </p>
-      </section>
-
-      <section class="question-three">
-        <h3>Question 3: How often do you charge your electronic devices?</h3>
-        <p>
-          According to
-          <a
-            id="info-link"
-            href="https://www.comparethemarket.com.au/energy/features/carbon-footprint-of-phone-charging/"
-            >this</a
-          >
-          website, in Europe, if you charge your phone once a day the average
-          estimate of carbon emissions is around 0.54kg per year. That does not
-          really seem like a lot. I will agree, that as an individual, it does
-          not. But this source also shows how much carbon is produced if EVERY
-          phone was charging at the same time, even if only for an hour. This
-          would lead to roughly 8,088,324 TONNES. And that is only once, for an
-          hour. What about if you left your phone charging overnight....
-        </p>
-      </section>
-
-      <section class="question-four">
-        <h3>
-          Question 4: On average, how many kilometres would you drive/be driven
-          in a week?
-        </h3>
-        <p>
-          The
-          <a
-            id="info-link"
-            href="https://www.seai.ie/data-and-insights/seai-statistics/key-statistics/transport/"
-            >SEAI</a
-          >
-          gives us a rough estimate of how much carbon emissions are produce per
-          kilometre travelled. 111g per kilometre. As students, perhaps you
-          might not be driving as much as adults, but it is important to
-          consider for those who drive to school rather than taking the bus,
-          cycling or walking.
-        </p>
-        <p>
-          Let us assume that you drive or are driven around 50 km each week.
-          That is not a lot in comparison to other people who drive, but for
-          arguments sake, let us make that assumption. That equals around 2600
-          kilometres a year. That is very little for someone who might be
-          driving every day. But let us put that into more perspective.
-        </p>
-        <p>
-          2600 km is around 288 kg of C02 per year, which in turn is about the
-          same as charging your phone 528 times!
-        </p>
-      </section>
-
-      <section class="question-five">
-        <h3>
-          Question 5: How often do you turn off the lights when you are not in
-          the room?
-        </h3>
-        <p>
-          <a
-            id="info-link"
-            href="https://www.elesi.com/blog/impact-of-leaving-the-lights-on/#:~:text=One%20of%20the%20most%20concerning,incredibly%20harmful%20to%20the%20environment"
-            >This</a
-          >
-          study sheds light on the carbon emissions resulting from leaving
-          lights on, drawing from research in the UK. It suggests that an
-          average of approximately 5.75 kg of carbon emissions is generated per
-          year if lights are constantly left on. As we have a similar power grid
-          to that of the UK, this can be estimated to be accurate to a certain
-          degree for Ireland. When applied to millions of households across the
-          country, this seemingly small amount of emissions accumulates
-          significantly.
-        </p>
-      </section>
-
-      <section class="question-six">
-        <h3>Question 6: How often do you take a shower/bath?</h3>
-        <p>
-          <a
-            id="info-link"
-            href="https://www.bbva.es/en/general/sostenibilidad/soluciones-para-personas/huella-de-carbono-personas/repositorio/ducharse-a-diario.html#:~:text=Showering%20every%20day%20generates%20109,an%20electric%20boiler%20is%20used"
-            >BBVA</a
-          >
-          states that an average shower that lasts around 5 minutes has a
-          maximum carbon emission of around 200 grams. If one was to shower
-          every day, thats around 73 kg per year. According to
-          <a
-            id="info-link"
-            href="https://www.encon.eu/en/calculation-co2#:~:text=To%20summarise%20the%20various%20studies,by%2031%20to%2046%20trees."
-            >a study on trees</a
-          >, the average amount a tree negates C02 in a year is around 21-31kg
-          of C02. For these stats, this would only be 2-3 trees each year for
-          all the showers one would have in a year.
-        </p>
-
-        <p>
-          However, these results for how much carbon is produced for a shower
-          only takes into account for a 5 minute shower with a gas boiler.
-          Electric boilers cost more and there is always a possibility that one
-          showers for longer than 5 minutes.
-        </p>
-      </section>
-
-      <section class="question-seven-eight">
-        <h3>
-          Question 7: How often do you buy new t-shirts or tops? <br />
-          Question 8: How often do you but new jeans or trousers?
-        </h3>
-        <p>
-          <a
-            id="info-link"
-            href="https://quantis.com/wp-content/uploads/2018/03/measuringfashion_globalimpactstudy_full-report_quantis_cwf_2018a.pdf"
-            >Fast Fashion</a
-          >
-          states that the average emissions of a pair of jeans is around 15-20
-          kg and a t-shirt is 2kg. This is due to how far it has to travel
-          around the world and also based on the natural resources, extracting
-          them from the world. If you are one to buy clothes often, it might be
-          more sustainable to buy second had, to donate old clothes or perhaps
-          to shop somewhere more sustainable.
-        </p>
-        <p>
-          <a id="info-link" href="https://www.thredup.com/fashionfootprint/"
-            >This calculator</a
-          >
-          is a very good resource for checking out how much you might be
-          producing and how you can go about it.
-        </p>
-      </section>
-
-      <section class="question-nine">
-        <h3>Question 9: Do you have a reusable water bottle?</h3>
-        <p>
-          <a
-            id="info-link"
-            href="https://www.bieroundtable.com/wp-content/uploads/49d7a0_824b8dcfeaa74427a56b57abb8e2417e.pdf"
-            >This</a
-          >
-          document shows you how much one 500ml bottle emits in carbon emissions
-          and it boils down to roughly 83 grams per bottle. Over time, this adds
-          up a lot if you were to drink 2 litres a day. Therefore the most
-          viable option is a reusable water bottle. While they do create more
-          carbon emissions to create, they break even around 40-50 refills.
-          Another great resource for finding out how much carbon is produced for
-          every day items can be found
-          <a
-            id="info-link"
-            href="https://clevercarbon.io/carbon-footprint-of-common-items/"
-            >here</a
-          >
-        </p>
-      </section>
-    </main>
-
-    <div id="mySidenav" class="sidenav">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-      <a href="index.html">Home</a>
-      <a href="quizzes.html">Quizzes</a>
-      <a href="challenges.html">Challenges</a>
-      <a href="sdgs.html">SDG's</a>
-      <a href="calculator.html">Calculator</a>
+        </ul>
+      </span>
     </div>
+  </footer>
 
-    <footer>
-      <div class="row inner">
-        <span class="copyright"> ©WebsiteName 2024 </span>
+  <span class="navside" onclick="openNav()">☰</span>
+</body>
 
-        <span class="meta">
-          <ul class="links">
-            <a href="index.html">Home</a>
-            <a href="quizzes.html">Quizzes</a>
-            <a href="challenges.html">Challenges</a>
-            <a href="sdgs.html">SDG's</a>
-            <a href="calculator.html">Calculator</a>
-          </ul>
-        </span>
-      </div>
-    </footer>
-
-    <span class="navside" onclick="openNav()">☰</span>
-  </body>
 </html>

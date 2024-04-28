@@ -608,6 +608,10 @@ h3 {
   padding: 1rem;
 }
 
+section.results h3 {
+  text-decoration: underline;
+}
+
 .hero {
   background-image: url('images/mountain.jpg');
   background-repeat: no-repeat;
@@ -708,6 +712,10 @@ main.calculator .question {
   opacity: 0.8;
 }
 
+h5 {
+  padding-left: 1rem
+}
+
 footer {
   position: relative; /* Position footer relative to its normal flow */
   background-color: #004C6C;
@@ -791,15 +799,6 @@ footer .meta .icons {
     align-items: flex-start;
   }
 
-  /* footer .copyright:after {
-    content: "";
-    position: absolute;
-    margin: 10px 0 0 0;
-    height: 1px;
-    left: 0;
-    right: 0;
-    background-color: #505050;
-  } */
 
   footer .meta {
     margin: 15px 0 0 0;
