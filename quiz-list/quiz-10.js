@@ -28,7 +28,7 @@
         c: "The difference in average income between countries",
         d: "The national debt of a country"
       },
-      correctAnswer: "c"
+      correctAnswer: "a"
     },
     {
       question: "SDG #10 promotes progressive taxation. What does this mean?",
@@ -48,7 +48,7 @@
         c: "Regulate financial markets and institutions",
         d: "Ensure equal opportunity and eliminate discrimination"
       },
-      correctAnswer: "a"
+      correctAnswer: "c"
     },
     {
       question: "How can technological advancements contribute to reducing inequality according to SDG #10?",

@@ -86,7 +86,7 @@
             a: "Lack of public awareness about climate change",
             b: "Difficulty transitioning to renewable energy sources in some regions",
             c: "Limited international cooperation on climate action",
-            d: "All of the above are challenges"
+            d: "All of the above"
         },
         correctAnswer: "d"
     },

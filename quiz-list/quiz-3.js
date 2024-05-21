@@ -11,7 +11,7 @@
       correctAnswer: "b",
     },
     {
-      question: "Which of the following is NOT a target within SDG 3?",
+      question: "Which of the following is a target within SDG 3?",
       answers: {
         a: "Reduce the global maternal mortality ratio to less than 70 per 100,000 live births",
         b: "End preventable deaths of newborns and children under 5",
